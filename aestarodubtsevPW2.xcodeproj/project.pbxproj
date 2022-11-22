@@ -11,10 +11,14 @@
 		490F02B928E90928008B80D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490F02B828E90928008B80D9 /* SceneDelegate.swift */; };
 		490F02C028E9092A008B80D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 490F02BF28E9092A008B80D9 /* Assets.xcassets */; };
 		490F02C328E9092A008B80D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 490F02C128E9092A008B80D9 /* LaunchScreen.storyboard */; };
+		494BF940292AC60F001D38CD /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494BF93F292AC60F001D38CD /* NotesViewController.swift */; };
+		494BF943292B1416001D38CD /* ShortNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494BF942292B1416001D38CD /* ShortNote.swift */; };
+		494BF946292B14C5001D38CD /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494BF945292B14C5001D38CD /* NoteCell.swift */; };
 		4950A49C290CDA1D00BCC6EE /* ColorPaletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4950A49B290CDA1D00BCC6EE /* ColorPaletteView.swift */; };
 		4950A4A2290D23F800BCC6EE /* ExtensionColorPalleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4950A4A1290D23F800BCC6EE /* ExtensionColorPalleteView.swift */; };
 		4994DF6028E92BCA00EA017D /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4994DF5F28E92BCA00EA017D /* WelcomeViewController.swift */; };
 		4994DF6328E93E0700EA017D /* UIView_Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4994DF6228E93E0700EA017D /* UIView_Pin.swift */; };
+		499C65B4292CE9F2001C3D3D /* AddNoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499C65B3292CE9F2001C3D3D /* AddNoteCell.swift */; };
 		499FD582290DA2420033C7F6 /* ColorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499FD581290DA2420033C7F6 /* ColorProtocol.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,10 +29,14 @@
 		490F02BF28E9092A008B80D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		490F02C228E9092A008B80D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		490F02C428E9092A008B80D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		494BF93F292AC60F001D38CD /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		494BF942292B1416001D38CD /* ShortNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortNote.swift; sourceTree = "<group>"; };
+		494BF945292B14C5001D38CD /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
 		4950A49B290CDA1D00BCC6EE /* ColorPaletteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPaletteView.swift; sourceTree = "<group>"; };
 		4950A4A1290D23F800BCC6EE /* ExtensionColorPalleteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionColorPalleteView.swift; sourceTree = "<group>"; };
 		4994DF5F28E92BCA00EA017D /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		4994DF6228E93E0700EA017D /* UIView_Pin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView_Pin.swift; sourceTree = "<group>"; };
+		499C65B3292CE9F2001C3D3D /* AddNoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteCell.swift; sourceTree = "<group>"; };
 		499FD581290DA2420033C7F6 /* ColorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,11 +70,12 @@
 		490F02B528E90928008B80D9 /* aestarodubtsevPW2 */ = {
 			isa = PBXGroup;
 			children = (
-				499FD580290DA2040033C7F6 /* protocols */,
-				4942D0DC290CD374000170CC /* views */,
 				4994DF6128E93DD300EA017D /* Pin */,
+				499FD580290DA2040033C7F6 /* protocols */,
 				490F02B628E90928008B80D9 /* AppDelegate.swift */,
 				490F02B828E90928008B80D9 /* SceneDelegate.swift */,
+				494BF941292B13E0001D38CD /* Models */,
+				4942D0DC290CD374000170CC /* views */,
 				4994DF5E28E9284F00EA017D /* Controllers */,
 				490F02BF28E9092A008B80D9 /* Assets.xcassets */,
 				490F02C128E9092A008B80D9 /* LaunchScreen.storyboard */,
@@ -80,14 +89,25 @@
 			children = (
 				4950A49B290CDA1D00BCC6EE /* ColorPaletteView.swift */,
 				4950A4A1290D23F800BCC6EE /* ExtensionColorPalleteView.swift */,
+				499C65B3292CE9F2001C3D3D /* AddNoteCell.swift */,
 			);
 			path = views;
+			sourceTree = "<group>";
+		};
+		494BF941292B13E0001D38CD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				494BF942292B1416001D38CD /* ShortNote.swift */,
+				494BF945292B14C5001D38CD /* NoteCell.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		4994DF5E28E9284F00EA017D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				4994DF5F28E92BCA00EA017D /* WelcomeViewController.swift */,
+				494BF93F292AC60F001D38CD /* NotesViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -182,9 +202,13 @@
 				4950A49C290CDA1D00BCC6EE /* ColorPaletteView.swift in Sources */,
 				490F02B728E90928008B80D9 /* AppDelegate.swift in Sources */,
 				4994DF6328E93E0700EA017D /* UIView_Pin.swift in Sources */,
+				494BF940292AC60F001D38CD /* NotesViewController.swift in Sources */,
 				499FD582290DA2420033C7F6 /* ColorProtocol.swift in Sources */,
 				4950A4A2290D23F800BCC6EE /* ExtensionColorPalleteView.swift in Sources */,
+				494BF946292B14C5001D38CD /* NoteCell.swift in Sources */,
 				490F02B928E90928008B80D9 /* SceneDelegate.swift in Sources */,
+				494BF943292B1416001D38CD /* ShortNote.swift in Sources */,
+				499C65B4292CE9F2001C3D3D /* AddNoteCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
