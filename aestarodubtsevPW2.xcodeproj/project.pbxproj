@@ -16,6 +16,7 @@
 		494BF946292B14C5001D38CD /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494BF945292B14C5001D38CD /* NoteCell.swift */; };
 		4950A49C290CDA1D00BCC6EE /* ColorPaletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4950A49B290CDA1D00BCC6EE /* ColorPaletteView.swift */; };
 		4950A4A2290D23F800BCC6EE /* ExtensionColorPalleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4950A4A1290D23F800BCC6EE /* ExtensionColorPalleteView.swift */; };
+		496CC7C8292DCD9E00CBA8CD /* AddNoteDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496CC7C7292DCD9E00CBA8CD /* AddNoteDelegate.swift */; };
 		4994DF6028E92BCA00EA017D /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4994DF5F28E92BCA00EA017D /* WelcomeViewController.swift */; };
 		4994DF6328E93E0700EA017D /* UIView_Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4994DF6228E93E0700EA017D /* UIView_Pin.swift */; };
 		499C65B4292CE9F2001C3D3D /* AddNoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499C65B3292CE9F2001C3D3D /* AddNoteCell.swift */; };
@@ -34,6 +35,7 @@
 		494BF945292B14C5001D38CD /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
 		4950A49B290CDA1D00BCC6EE /* ColorPaletteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPaletteView.swift; sourceTree = "<group>"; };
 		4950A4A1290D23F800BCC6EE /* ExtensionColorPalleteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionColorPalleteView.swift; sourceTree = "<group>"; };
+		496CC7C7292DCD9E00CBA8CD /* AddNoteDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteDelegate.swift; sourceTree = "<group>"; };
 		4994DF5F28E92BCA00EA017D /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		4994DF6228E93E0700EA017D /* UIView_Pin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView_Pin.swift; sourceTree = "<group>"; };
 		499C65B3292CE9F2001C3D3D /* AddNoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteCell.swift; sourceTree = "<group>"; };
@@ -89,7 +91,6 @@
 			children = (
 				4950A49B290CDA1D00BCC6EE /* ColorPaletteView.swift */,
 				4950A4A1290D23F800BCC6EE /* ExtensionColorPalleteView.swift */,
-				499C65B3292CE9F2001C3D3D /* AddNoteCell.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -99,6 +100,7 @@
 			children = (
 				494BF942292B1416001D38CD /* ShortNote.swift */,
 				494BF945292B14C5001D38CD /* NoteCell.swift */,
+				499C65B3292CE9F2001C3D3D /* AddNoteCell.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -124,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				499FD581290DA2420033C7F6 /* ColorProtocol.swift */,
+				496CC7C7292DCD9E00CBA8CD /* AddNoteDelegate.swift */,
 			);
 			path = protocols;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				4994DF6328E93E0700EA017D /* UIView_Pin.swift in Sources */,
 				494BF940292AC60F001D38CD /* NotesViewController.swift in Sources */,
 				499FD582290DA2420033C7F6 /* ColorProtocol.swift in Sources */,
+				496CC7C8292DCD9E00CBA8CD /* AddNoteDelegate.swift in Sources */,
 				4950A4A2290D23F800BCC6EE /* ExtensionColorPalleteView.swift in Sources */,
 				494BF946292B14C5001D38CD /* NoteCell.swift in Sources */,
 				490F02B928E90928008B80D9 /* SceneDelegate.swift in Sources */,

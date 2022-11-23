@@ -3,11 +3,18 @@ final class AddNoteCell: UITableViewCell {
     static let reuseIdentifier = "AddNoteCell"
     private var textView = UITextView()
     public var addButton = UIButton()
+
     
+    weak public var delegate: AddNoteDelegate?
+    
+    //var delegate: UITableViewDelegate!
+    //var delegate: AddNoteDelegate!
+
     // MARK: - Init
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         self.selectionStyle = .none
+        
         setupView()
     }
     
@@ -30,9 +37,9 @@ final class AddNoteCell: UITableViewCell {
         addButton.backgroundColor = .label
         addButton.layer.cornerRadius = 8
         addButton.setHeight(44)
-        addButton.addTarget(self, action: #selector(addButtonTapped(_:)),
+        addButton.addTarget(self, action: #selector(addButtonTapped),
                             for: .touchUpInside)
-        addButton.isEnabled = false
+        //addButton.isEnabled = false
         addButton.alpha = 0.5
         
         let stackView = UIStackView(arrangedSubviews: [textView, addButton])
@@ -47,6 +54,9 @@ final class AddNoteCell: UITableViewCell {
     
     @objc
     private func addButtonTapped(_ sender: UIButton) {
-        
+        print(7)
+        let shortNote = ShortNote(text: textView.text)
+        delegate?.newNoteAdded(note: shortNote)
+        textView.text = ""
     }
 }

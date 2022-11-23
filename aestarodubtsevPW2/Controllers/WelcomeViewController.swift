@@ -204,7 +204,7 @@ final class WelcomeViewController: UIViewController {
     
     @objc
     private func notesButtonPressed() {
-        self.present(notesView, animated: true, completion: nil)
+        self.present(UINavigationController(rootViewController: notesView), animated: true, completion: nil)
     }
     
     
