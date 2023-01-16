@@ -11,6 +11,7 @@
 		490F02B928E90928008B80D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490F02B828E90928008B80D9 /* SceneDelegate.swift */; };
 		490F02C028E9092A008B80D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 490F02BF28E9092A008B80D9 /* Assets.xcassets */; };
 		490F02C328E9092A008B80D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 490F02C128E9092A008B80D9 /* LaunchScreen.storyboard */; };
+		493021DA29747999009E0235 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493021D929747999009E0235 /* NewsViewController.swift */; };
 		494BF940292AC60F001D38CD /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494BF93F292AC60F001D38CD /* NotesViewController.swift */; };
 		494BF943292B1416001D38CD /* ShortNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494BF942292B1416001D38CD /* ShortNote.swift */; };
 		494BF946292B14C5001D38CD /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494BF945292B14C5001D38CD /* NoteCell.swift */; };
@@ -21,6 +22,9 @@
 		4994DF6328E93E0700EA017D /* UIView_Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4994DF6228E93E0700EA017D /* UIView_Pin.swift */; };
 		499C65B4292CE9F2001C3D3D /* AddNoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499C65B3292CE9F2001C3D3D /* AddNoteCell.swift */; };
 		499FD582290DA2420033C7F6 /* ColorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499FD581290DA2420033C7F6 /* ColorProtocol.swift */; };
+		49A36AD529732669008F3A1E /* NewsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A36AD429732669008F3A1E /* NewsListViewController.swift */; };
+		49A36AD9297367BA008F3A1E /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A36AD8297367BA008F3A1E /* NewsCell.swift */; };
+		49A36ADB2973727C008F3A1E /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A36ADA2973727C008F3A1E /* NewsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,7 @@
 		490F02BF28E9092A008B80D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		490F02C228E9092A008B80D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		490F02C428E9092A008B80D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		493021D929747999009E0235 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		494BF93F292AC60F001D38CD /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		494BF942292B1416001D38CD /* ShortNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortNote.swift; sourceTree = "<group>"; };
 		494BF945292B14C5001D38CD /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
@@ -40,6 +45,9 @@
 		4994DF6228E93E0700EA017D /* UIView_Pin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView_Pin.swift; sourceTree = "<group>"; };
 		499C65B3292CE9F2001C3D3D /* AddNoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteCell.swift; sourceTree = "<group>"; };
 		499FD581290DA2420033C7F6 /* ColorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorProtocol.swift; sourceTree = "<group>"; };
+		49A36AD429732669008F3A1E /* NewsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListViewController.swift; sourceTree = "<group>"; };
+		49A36AD8297367BA008F3A1E /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		49A36ADA2973727C008F3A1E /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,9 +106,11 @@
 		494BF941292B13E0001D38CD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				49A36AD8297367BA008F3A1E /* NewsCell.swift */,
 				494BF942292B1416001D38CD /* ShortNote.swift */,
 				494BF945292B14C5001D38CD /* NoteCell.swift */,
 				499C65B3292CE9F2001C3D3D /* AddNoteCell.swift */,
+				49A36ADA2973727C008F3A1E /* NewsViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -110,6 +120,8 @@
 			children = (
 				4994DF5F28E92BCA00EA017D /* WelcomeViewController.swift */,
 				494BF93F292AC60F001D38CD /* NotesViewController.swift */,
+				49A36AD429732669008F3A1E /* NewsListViewController.swift */,
+				493021D929747999009E0235 /* NewsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -208,11 +220,15 @@
 				494BF940292AC60F001D38CD /* NotesViewController.swift in Sources */,
 				499FD582290DA2420033C7F6 /* ColorProtocol.swift in Sources */,
 				496CC7C8292DCD9E00CBA8CD /* AddNoteDelegate.swift in Sources */,
+				49A36ADB2973727C008F3A1E /* NewsViewModel.swift in Sources */,
 				4950A4A2290D23F800BCC6EE /* ExtensionColorPalleteView.swift in Sources */,
 				494BF946292B14C5001D38CD /* NoteCell.swift in Sources */,
+				49A36AD9297367BA008F3A1E /* NewsCell.swift in Sources */,
 				490F02B928E90928008B80D9 /* SceneDelegate.swift in Sources */,
 				494BF943292B1416001D38CD /* ShortNote.swift in Sources */,
 				499C65B4292CE9F2001C3D3D /* AddNoteCell.swift in Sources */,
+				49A36AD529732669008F3A1E /* NewsListViewController.swift in Sources */,
+				493021DA29747999009E0235 /* NewsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

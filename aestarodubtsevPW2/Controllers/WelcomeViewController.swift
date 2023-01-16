@@ -155,6 +155,7 @@ final class WelcomeViewController: UIViewController {
         notesButton.addTarget(self, action: #selector(notesButtonPressed), for: .touchUpInside)
         
         let newsButton = makeMenuButton(title: "📰")
+        newsButton.addTarget(self, action: #selector(newsButtonPressed), for: .touchUpInside)
         
         buttonsSV = UIStackView(arrangedSubviews: [colorsButton, notesButton, newsButton])
         buttonsSV.spacing = 12
@@ -205,6 +206,13 @@ final class WelcomeViewController: UIViewController {
     @objc
     private func notesButtonPressed() {
         self.present(UINavigationController(rootViewController: notesView), animated: true, completion: nil)
+    }
+    
+    @objc
+    private func newsButtonPressed() {
+        let newsListController = NewsListViewController()
+        navigationController?.pushViewController(newsListController, animated: true)
+        
     }
     
     
