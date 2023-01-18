@@ -1,5 +1,6 @@
+// 
 import UIKit
-setupUI()
+
 final class NewsViewController: UIViewController {
 private var imageView = UIImageView()
 private var titleLabel = UILabel()

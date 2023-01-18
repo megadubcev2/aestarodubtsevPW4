@@ -25,6 +25,7 @@
 		49A36AD529732669008F3A1E /* NewsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A36AD429732669008F3A1E /* NewsListViewController.swift */; };
 		49A36AD9297367BA008F3A1E /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A36AD8297367BA008F3A1E /* NewsCell.swift */; };
 		49A36ADB2973727C008F3A1E /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A36ADA2973727C008F3A1E /* NewsViewModel.swift */; };
+		49D9673729782B0E007358CD /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D9673629782B0E007358CD /* ApiService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		49A36AD429732669008F3A1E /* NewsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListViewController.swift; sourceTree = "<group>"; };
 		49A36AD8297367BA008F3A1E /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
 		49A36ADA2973727C008F3A1E /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
+		49D9673629782B0E007358CD /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				494BF93F292AC60F001D38CD /* NotesViewController.swift */,
 				49A36AD429732669008F3A1E /* NewsListViewController.swift */,
 				493021D929747999009E0235 /* NewsViewController.swift */,
+				49D9673629782B0E007358CD /* ApiService.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 			files = (
 				4994DF6028E92BCA00EA017D /* WelcomeViewController.swift in Sources */,
 				4950A49C290CDA1D00BCC6EE /* ColorPaletteView.swift in Sources */,
+				49D9673729782B0E007358CD /* ApiService.swift in Sources */,
 				490F02B728E90928008B80D9 /* AppDelegate.swift in Sources */,
 				4994DF6328E93E0700EA017D /* UIView_Pin.swift in Sources */,
 				494BF940292AC60F001D38CD /* NotesViewController.swift in Sources */,

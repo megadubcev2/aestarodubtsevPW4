@@ -1,6 +1,6 @@
 import UIKit
 
-final class NewsViewModel {
+final class NewsViewModel : Decodable {
     let title: String
     let description: String
     let imageURL: URL?
